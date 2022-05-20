@@ -10,9 +10,9 @@ STICKER_IDS = "CAACAgUAAxkBAAIBaWKGlZpP4wHeFOC1e9tNXxWUs2OCAALXBAAC9Q-oV8yJbf0Fb
 
 @Client.on_message(filters.command("ping") & filters.private)
 async def ping(bot: Client, message):
-    await message.reply_sticker(
-        sticker=choice(STICKER_IDS),
-    )
+    #await message.reply_sticker(
+        #sticker=choice(STICKER_IDS),
+    #)
     start_ts=time.time()
     beep = await message.reply("...")
     end_ts=time.time()
