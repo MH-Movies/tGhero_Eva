@@ -10,7 +10,6 @@ STICKER_IDS = "CAACAgUAAxkBAAIBaWKGlZpP4wHeFOC1e9tNXxWUs2OCAALXBAAC9Q-oV8yJbf0Fb
 
 @Client.on_message(filters.command("ping") & filters.private)
 async def ping(bot: Client, message):
-    await message.delete("/")
     await message.reply_sticker(
         sticker=choice(STICKER_IDS),
     )
