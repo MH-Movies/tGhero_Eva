@@ -8,7 +8,7 @@ STICKER_IDS = "CAACAgUAAxkBAAIBaWKGlZpP4wHeFOC1e9tNXxWUs2OCAALXBAAC9Q-oV8yJbf0Fb
               "CAACAgUAAxkBAAIBbGKGlZr4iuzVGWkwu1sy431DcKYCAAJqBAAC7nuxVzQ8Wb80s0UtJAQ"
 
 
-@Client.on_message(filters.command("ping") & filters.private)
+@Client.on_message(filters.command("ping"))
 async def ping(bot: Client, message):
     start_ts=time.time()
     beep = await message.reply_text(".")
