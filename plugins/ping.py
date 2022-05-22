@@ -16,4 +16,4 @@ async def ping(bot: Client, message):
     ded=await sheep.edit("...")
     end_ts=time.time()
     time_taken=(end_ts - start_ts) * 1000
-    await beep.edit(f"Ping : {time_taken}")
+    await beep.edit(f"Ping : {time_taken:.3f} ms")
