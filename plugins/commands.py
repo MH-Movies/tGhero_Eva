@@ -75,7 +75,7 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('ᴄʟɪᴄᴋ ʜᴇʀᴇ ꜰᴏʀ ᴍᴏʀᴇ ʙᴜᴛᴛᴏɴs', callback_data='help')
+            InlineKeyboardButton('⚡ ᴄʟɪᴄᴋ ʜᴇʀᴇ ꜰᴏʀ ᴍᴏʀᴇ ʙᴜᴛᴛᴏɴs ⚡', callback_data='help')
            ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -224,7 +224,7 @@ async def start(client, message):
     buttons = [
                     [
                         InlineKeyboardButton('🚸 ᴅᴇʟᴇᴛᴇ', callback_data="close_pages"),
-                        InlineKeyboardButton('💞 sʜᴀʀᴇ', url="https://t.me/share/url?url=**😱%20സിനിമ%20ഭ്രാന്തൻ.²·⁰%20😱%0A%0Aഏത്%20അർധരാത്രി%20ചോദിച്ചാലും%20പടം%20കിട്ടും,%20ലോകത്തിലെ%20ഒട്ടുമിക്ക%20ഭാഷകളിലുമുള്ള%20സിനിമകളുടെ%20കളക്ഷൻ..%20❤️%0A%0A👇%20GROUP%20LINK%20👇%0A@CinimaBranthen%0A@CinimaBranthen%0A@CinimaBranthen**")
+                        InlineKeyboardButton('💞 sʜᴀʀᴇ', url="https://t.me/share/url?url=😱%20സിനിമ%20ലോകം.²·⁰%20😱%0A%0Aഏത്%20അർധരാത്രി%20ചോദിച്ചാലും%20പടം%20കിട്ടും,%20ലോകത്തിലെ%20ഒട്ടുമിക്ക%20ഭാഷകളിലുമുള്ള%20സിനിമകളുടെ%20കളക്ഷൻ..%20❤️%0A%0A👇%20GROUP%20LINK%20👇%0A@CinimaLokham%0A@CinimaLokham%0A@CinimaLokham")
                     ],
                     [
                         InlineKeyboardButton(text=f'🌿 Fɪʟᴇ sɪᴢᴇ 【 {size} 】🌿', callback_data='gxneo')
@@ -535,7 +535,7 @@ async def settings(client, message):
 )
 async def report(bot, message):
     buttons = [[
-        InlineKeyboardButton('✅ Report Send ✅', callback_data='pages')
+        InlineKeyboardButton('✔ ʀᴇᴘᴏʀᴛ ꜱᴇɴᴅ ✔', callback_data='close_pages')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     k = await message.reply_sticker("CAACAgUAAxkBAAEEA7liG48lVnCeDRa7XS6ljHR9c08VsQACqQADyJRkFOv8RlMxwyrKIwQ", reply_markup=reply_markup)
