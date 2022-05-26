@@ -63,7 +63,7 @@ async def start(client, message):
             kk, file_id = message.command[1].split("_", 1)
             pre = 'checksubp' if kk == 'filep' else 'checksub' 
             btn = [[InlineKeyboardButton("ᴊᴏɪɴ ɢʀᴏᴜᴘ", url=invite_link.invite_link),
-                    InlineKeyboardButton("ᴍᴇ ᴊᴏɪɴᴇᴅ", callback_data=f"{pre}#{file_id}")],[
+                    InlineKeyboardButton("ᴍᴇ ᴊᴏɪɴᴇᴅ", callback_data=f"checksub#{message.command[1]}"],[
                     InlineKeyboardButton("Hᴇʏ Bᴏᴛ....! Wʜʏ I'ᴍ ᴊᴏɪɴɪɴɢ", callback_data="neosub")]]
         await client.send_message(
             chat_id=message.from_user.id,
