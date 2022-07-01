@@ -791,29 +791,23 @@ async def advantage_spell_chok(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
-        btn = [[
-            InlineKeyboardButton('🔍 ɢᴏᴏɢʟᴇ 🔎', url=f'https://google.com/search?q='),
-            InlineKeyboardButton(' 🔍 ʏᴀɴᴅᴇx 🔎', url=f'https://yandex.com/search?text=')
-        ],[
-            InlineKeyboardButton("🇮🇳 ᴛʀᴀɴsʟᴀᴛᴇ ᴛᴏ ᴍᴀʟᴀʏᴀʟᴀᴍ 🇮🇳", callback_data="malspell")
-        ]]           
-        k=await msg.reply_photo(photo="https://telegra.ph/file/4bb1968bd091453b0070c.jpg", caption=script.SPELL_CHECK_ENG, reply_markup=InlineKeyboardMarkup(btn))    
-        await asyncio.sleep(40)
+        k = await msg.reply_photo("<b>★ Movie Is Not Available in the database\n\n〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓\n\n● Please Messgae Here👉 @UrvashiTheaters_Requests To Add This Movie To My Database\n\n● ഈ സിനിമ എന്റെ ഡാറ്റബേസിൽ ഇല്ല @UrvashiTheaters_Requests ജോയിൻ ചെയ്ത് ആഡ്ആക്കാൻ മെസ്സേജ് അയക്കൂ\n\n©️ [UrvashiTheaters](https://t.me/UrvashiTheaters)</b>")
+        await asyncio.sleep(30)
         await k.delete()
-        await msg.delete()
         return
     SPELL_CHECK[msg.message_id] = movielist
     btn = [[
-        InlineKeyboardButton('🔍 ɢᴏᴏɢʟᴇ 🔎', url=f'https://google.com/search?q='),
-        InlineKeyboardButton(' 🔍 ʏᴀɴᴅᴇx 🔎', url=f'https://yandex.com/search?text=')
-    ],[
-        InlineKeyboardButton("🇮🇳 ᴛʀᴀɴsʟᴀᴛᴇ ᴛᴏ ᴍᴀʟᴀʏᴀʟᴀᴍ 🇮🇳", callback_data="malspell")
-    ]]
-    k=await msg.reply_photo(photo="https://telegra.ph/file/4bb1968bd091453b0070c.jpg", caption=script.SPELL_CHECK_ENG, reply_markup=InlineKeyboardMarkup(btn))    
-    await asyncio.sleep(40)
-    await k.delete()
-    await msg.delete()
-    return
+        InlineKeyboardButton(
+            text=movie.strip(),
+            callback_data=f"spolling#{user}#{k}",
+        )
+    ] for k, movie in enumerate(movielist)]
+    btn.append([InlineKeyboardButton(text="🚫 Close 🚫", callback_data=f'spolling#{user}#close_spellcheck')])
+    btn.insert(0,
+        [InlineKeyboardButton("📮 ഉർവശിതീയറ്റേഴ്‌സ് 📮", url="https://t.me/UrvashiTheaters")]
+    )
+    await msg.reply_photo(photo="https://telegra.ph/file/28b5224d883a610d26ee8.jpg", caption="<b><u><i>📣 I couldn't find anything related to that Did you mean any one of these?\n\n📣 നിങ്ങൾ ഉദ്ദേശിച്ച മൂവി താഴെ കാണുന്ന വല്ലതും ആണ് എങ്കിൽ.അതിൽ ക്ലിക്ക് ചെയ്യുക</i></b></u>",
+                    reply_markup=InlineKeyboardMarkup(btn))
 
 
 
