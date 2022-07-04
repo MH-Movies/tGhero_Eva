@@ -808,7 +808,7 @@ async def advantage_spell_chok(msg):
         [
             InlineKeyboardButton("📽️സിനിമ കേന്ദ്രം 𝐌𝐇™", url="https://t.me/CinemaKendram"),
             InlineKeyboardButton('🔍 ɢᴏᴏɢʟᴇ 🔎', url=f'https://www.google.com/search?q='),
-            InlineKeyboardButton("⭕️ IMDb", url=f"https://www.imdb.com/find?q="),
+            InlineKeyboardButton("⭕️ IMDb", url=f"https://www.imdb.com/find?q=")
         ]
     )
     await msg.reply_photo(photo="https://telegra.ph/file/c40aefe742c64f500dad5.jpg", caption="<b><i>📣 I couldn't find anything related to that Did you mean any one of these?\n\n📣 നിങ്ങൾ ഉദ്ദേശിച്ച മൂവി താഴെ കാണുന്ന വല്ലതും ആണ് എങ്കിൽ.അതിൽ ക്ലിക്ക് ചെയ്യുക\n\n📣 यदि आपके द्वारा इच्छित फिल्म कुछ भी है जो आप नीचे देखते हैं।</i></b>",
