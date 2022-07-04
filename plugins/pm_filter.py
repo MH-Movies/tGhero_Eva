@@ -807,7 +807,7 @@ async def advantage_spell_chok(msg):
     btn.insert(0,
         [
             InlineKeyboardButton("📽️സിനിമ കേന്ദ്രം 𝐌𝐇™", url="https://t.me/CinemaKendram"),
-            InlineKeyboardButton('🔍 ɢᴏᴏɢʟᴇ 🔎', url=f'https://www.google.com/search?q={search}'),
+            InlineKeyboardButton('🔍 ɢᴏᴏɢʟᴇ 🔎', url=f'https://www.google.com/search?q='),
             InlineKeyboardButton("⭕️ IMDb", url=f"https://www.imdb.com/find?q={search}"),
         ]
     )
