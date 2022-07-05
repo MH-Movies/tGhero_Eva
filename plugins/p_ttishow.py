@@ -50,7 +50,6 @@ async def save_group(bot, message):
             for u in message.new_chat_members:
                 buttons = [[
                 InlineKeyboardButton('📢 Updates', url="https://t.me/MoviesHub_Updates")
-                InlineKeyboardButton(f'click here', 'wlcm'),
             ]]
                 if (temp.MELCOW).get('welcome') is not None:
                     try:
