@@ -48,6 +48,9 @@ async def save_group(bot, message):
         settings = await get_settings(message.chat.id)
         if settings["welcome"]:
             for u in message.new_chat_members:
+                buttons = [[
+                InlineKeyboardButton('📢 Updates', url="https://t.me/MoviesHub_Updates")
+            ]]
                 if (temp.MELCOW).get('welcome') is not None:
                     try:
                         await (temp.MELCOW['welcome']).delete()
