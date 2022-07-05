@@ -815,8 +815,8 @@ async def advantage_spell_chok(msg):
         )
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="🚫 Close 🚫", callback_data=f'spolling#{user}#close_spellcheck')])
-    await asyncio.sleep(30)
-    await k.delete()
+    await asyncio.sleep(10)
+    await k.delete(10)
     btn.insert(0,
         [
             InlineKeyboardButton("📽️സിനിമ കേന്ദ്രം 𝐌𝐇™", url="https://t.me/CinemaKendram"),
