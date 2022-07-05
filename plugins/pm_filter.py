@@ -1,4 +1,4 @@
-.#Kanged From @NxtStark
+#Kanged From @NxtStark
 import asyncio
 import re
 import ast
