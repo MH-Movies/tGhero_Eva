@@ -815,6 +815,7 @@ async def advantage_spell_chok(msg):
         )
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="🚫 Close 🚫", callback_data=f'spolling#{user}#close_spellcheck')])
+    await asyncio.sleep(30)
     btn.insert(0,
         [
             InlineKeyboardButton("📽️സിനിമ കേന്ദ്രം 𝐌𝐇™", url="https://t.me/CinemaKendram"),
@@ -822,8 +823,7 @@ async def advantage_spell_chok(msg):
             InlineKeyboardButton("⭕️ IMDb", url=f"https://www.imdb.com/find?q="),
         ]
     )
-    await msg.reply_photo(photo="https://telegra.ph/file/c40aefe742c64f500dad5.jpg", caption="<b><i>📣 I couldn't find anything related to that Did you mean any one of these?\n\n📣 നിങ്ങൾ ഉദ്ദേശിച്ച മൂവി താഴെ കാണുന്ന വല്ലതും ആണ് എങ്കിൽ.അതിൽ ക്ലിക്ക് ചെയ്യുക\n\n📣 यदि आपके द्वारा इच्छित फिल्म कुछ भी है जो आप नीचे देखते हैं।</i></b>",
-    await asyncio.sleep(30)               
+    await msg.reply_photo(photo="https://telegra.ph/file/c40aefe742c64f500dad5.jpg", caption="<b><i>📣 I couldn't find anything related to that Did you mean any one of these?\n\n📣 നിങ്ങൾ ഉദ്ദേശിച്ച മൂവി താഴെ കാണുന്ന വല്ലതും ആണ് എങ്കിൽ.അതിൽ ക്ലിക്ക് ചെയ്യുക\n\n📣 यदि आपके द्वारा इच्छित फिल्म कुछ भी है जो आप नीचे देखते हैं।</i></b>",               
                     reply_markup=InlineKeyboardMarkup(btn))
 
 
