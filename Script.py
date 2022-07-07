@@ -4,15 +4,12 @@ class script(object):
 <b>Sᴏʀʀʏ ɪ ᴏɴʟʏ ᴡᴏʀᴋ ᴏɴ</b> <b><a href=https://t.me/MoviesHubGroup2>Movies Hub 2.1📡</a></b><b> Gʀᴏᴜᴘ. Nᴏ ᴏᴛʜᴇʀ ᴄᴏᴍᴍᴀɴᴅ ᴡɪʟʟ ᴡᴏʀᴋ ᴏɴ ᴛʜɪs ʙᴏᴛ ᴇxᴄᴇᴘᴛ sᴛᴀʀᴛ. ᴅᴏɴ’ᴛ ᴡᴀsᴛᴇ ʏᴏᴜʀ ᴛɪᴍᴇ</b>"""
     OWNER_TXT = """<b>⍟───[ ᴏᴡɴᴇʀ ᴅᴇᴛᴀɪʟꜱ ]───⍟
     
-• ꜰᴜʟʟ ɴᴀᴍᴇ : ɢᴛ ᠰ ʜᴇʀᴏ
-• ᴜꜱᴇʀɴᴀᴍᴇ : @MoviesHub_Updates
-• ᴘᴇʀᴍᴀɴᴇɴᴛ ᴅᴍ ʟɪɴᴋ : <a href=https://t.me/MoviesHub_Updates>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>
-
-⍟───[ 💕 sᴘᴇᴄɪᴀʟ ᴛʜᴀɴᴋs 💕 ]───⍟
-
-• ꜰᴜʟʟ ɴᴀᴍᴇ : ɴxᴛsᴛᴀʀᴋ
+• ꜰᴜʟʟ ɴᴀᴍᴇ : ᴍᴏᴠɪᴇ ʜᴜʙ
 • ᴜꜱᴇʀɴᴀᴍᴇ : @MoviesHubGroup2
-• ᴘᴇʀᴍᴀɴᴇɴᴛ ᴅᴍ ʟɪɴᴋ : <a href=https://t.me/MoviesHubGroup2>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a></b>"""
+• ᴘᴇʀᴍᴀɴᴇɴᴛ ᴅᴍ ʟɪɴᴋ : <a href=https://t.me/MoviesHubGroup2>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>
+
+⍟───[ 💭 ᴍᴏᴠɪᴇ ʜᴜʙ 💭 ]───⍟</b>
+"""
     HELP_TXT = """𝙷𝙴𝚈 {}
 𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
     ENGLISHSPELL_TXT = "<b>Hello {} I could not find the movie you asked for 🥴</b>\n\n<b>Google, Yandex Click on any button and find the <u>CORRECT MOVIE NAME </u>and enter it here but the movie will be available 🙃\n\nIf you do not receive the movie even after entering the correct name ...</b> <code>@admin type movie name</code> <b>Inform the admin in this format .. We will upload within 24 hours 😇</b>"
@@ -109,7 +106,10 @@ This module only works for my admins
 👤 ᴛᴏᴛᴀʟ ᴜsᴇʀs: <code>{}</code>
 👥 ᴛᴏᴛᴀʟ ᴄʜᴀᴛs: <code>{}</code>
 📈 ᴜsᴇᴅ sᴛᴏʀᴀɢᴇ: <code>{}</code>
-📊 ғʀᴇᴇ sᴛᴏʀᴀɢᴇ: <code>{}</code>"""
+📊 ғʀᴇᴇ sᴛᴏʀᴀɢᴇ: <code>{}</code>
+
+⍟───[ 💭 ᴍᴏᴠɪᴇ ʜᴜʙ 💭 ]───⍟</b>
+"""
     LOG_TEXT_G = """#NewGroup
 Group = {}(<code>{}</code>)
 Total Members = <code>{}</code>
