@@ -51,7 +51,11 @@ async def save_group(bot, message):
                 buttons = [[
                 InlineKeyboardButton('📢 Updates', url="https://t.me/MoviesHub_Updates")
             ]]
-                if (temp.MELCOW).get('welcome') is not None:
+            btn.append(
+            [
+             InlineKeyboardButton("Hi", callback_data=f"Hello", show_alert=True)]
+        )   
+             if (temp.MELCOW).get('welcome') is not None:
                     try:
                         await (temp.MELCOW['welcome']).delete()
                     except:
